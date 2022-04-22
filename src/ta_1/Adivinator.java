@@ -1,5 +1,6 @@
 package ta_1;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Adivinator {
@@ -59,9 +60,11 @@ public class Adivinator {
 		System.out.println("\n Intrduce un número:");
 
 		try {
-			nr = Integer.parseInt(scnr.next());
-		} catch (Exception e) {
+			nr = scnr.nextInt();
+//			nr = Integer.parseInt(scnr.next());
+		} catch (InputMismatchException e) {
 			System.out.println("El valor introducido no se reconoce.");
+			scnr.next();
 		}
 
 		this.inputNr = nr;
