@@ -4,16 +4,12 @@ public class unoAdivinarApp {
 
 	public static void main(String[] args) {
 		
-//		Instanciar objeto adivinator
+		// Instanciar objeto adivinator
 		
 		Adivinator adv = new Adivinator();
 				
 		// Mostrar por pantalla las instrucciones
 		adv.mostrarIntro();
-//		System.out.println("Tienes que adivinar el número.");
-//		System.out.println("Introduce un número entre 1 y 500, ambos incluidos."
-//				+ "\n¡Cada intento cuenta! Suerte!");
-
 
 		do {
 			// Pedir al usuario introducir un numero por pantalla

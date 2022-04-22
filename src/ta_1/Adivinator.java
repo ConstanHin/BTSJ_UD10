@@ -61,7 +61,6 @@ public class Adivinator {
 
 		try {
 			nr = scnr.nextInt();
-//			nr = Integer.parseInt(scnr.next());
 		} catch (InputMismatchException e) {
 			System.out.println("El valor introducido no se reconoce.");
 			scnr.next();
@@ -103,10 +102,16 @@ public class Adivinator {
 
 	}
 
+	/**
+	 * Sumar intentos
+	 */
 	public void sumarIntento() {
 		this.intentosNr++;
 	}
 	
+	/**
+	 * Mostrar intro por pantalla
+	 */
 	public void mostrarIntro() {
 		System.out.println("¡Adivina el número!");
 		System.out.println("Introduce un número entre 1 y 500, ambos incluidos."
